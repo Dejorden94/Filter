@@ -37,10 +37,12 @@ body::after {
 body::before {
     background: purple;
     animation-delay: 0.1s;
+    z-index: 1;
 }
 
 body::after {
     background: pink;
+    z-index: 2;
 }
 
 main {
@@ -49,7 +51,7 @@ main {
     animation-fill-mode: forwards;
     animation-name: fadein;
     animation-duration: 0.8s;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 
 .inputs {
