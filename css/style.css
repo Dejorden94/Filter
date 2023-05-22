@@ -19,6 +19,11 @@ main {
     width: 100%;
 }
 
+.filter {
+    width: 5rem;
+    height: 5rem;
+}
+
 .games {
     width: 100%;
     display: flex;
