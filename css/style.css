@@ -15,6 +15,16 @@ body {
     padding: 8rem;
 }
 
+body::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: pink;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 main {
     width: 100%;
 }
