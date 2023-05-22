@@ -1,5 +1,16 @@
 let allGames = document.getElementsByClassName("game");
 
 for (let i = 0; i < allGames.length; i++) {
-    console.log(allGames[i].dataset.category);
+
+}
+
+let filters = document.getElementsByClassName("filter");
+
+//Indie filter
+filters[0].onchange = function () {
+    if (filters[0].checked === true) {
+        console.log("filter staat aan");
+    } else {
+        console.log("filter staat uit");
+    }
 }
