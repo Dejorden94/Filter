@@ -15,11 +15,11 @@ body {
     padding: 8rem;
 }
 
+body:before,
 body::after {
     content: "";
     height: 100%;
     width: 100%;
-    background: pink;
     position: absolute;
     top: 0;
     left: 0;
@@ -29,6 +29,15 @@ body::after {
     animation-fill-mode: forwards;
 
     animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+body::before {
+    background: purple;
+    animation-delay: 0.1s;
+}
+
+body::after {
+    background: pink;
 }
 
 main {
