@@ -23,6 +23,12 @@ body::after {
     position: absolute;
     top: 0;
     left: 0;
+    animation-name: away;
+    animation-duration: 1s;
+    transform-origin: right;
+    animation-fill-mode: forwards;
+
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 main {
@@ -89,4 +95,14 @@ main {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@keyframes away {
+    from {
+        transform: scaleX(1)
+    }
+
+    to {
+        transform: scaleX(0);
+    }
 }
