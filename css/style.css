@@ -45,6 +45,11 @@ body::after {
 
 main {
     width: 100%;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein;
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
 }
 
 .inputs {
@@ -116,5 +121,15 @@ main {
 
     to {
         transform: scaleX(0);
+    }
+}
+
+@keyframes fadein {
+    form {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
