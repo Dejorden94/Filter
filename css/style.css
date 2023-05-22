@@ -45,7 +45,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
     align-items: center;
 }
 
@@ -55,6 +54,7 @@ main {
     height: 30rem;
     transition: 0.2s transform;
     cursor: pointer;
+    flex-grow: 1;
 }
 
 .game:hover {
