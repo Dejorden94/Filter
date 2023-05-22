@@ -2,6 +2,10 @@ let allGames = document.getElementsByClassName("game");
 
 let filters = document.getElementsByClassName("filter");
 
+setInterval(function () {
+    document.getElementsByTagName("body")[0].style.overflow = "auto";
+}, 1100)
+
 for (let i = 0; i < filters.length; i++) {
     filters[i].checked = true;
 }
